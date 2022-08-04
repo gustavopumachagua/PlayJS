@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/src/img/icono.png">
+  <meta name="theme-color" content="#FF6600">
+  <link rel="apple-touch-icon" href="/src/img/icono.png">
+  <title>Piedra, Papel o Tijera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-page">
+      <figure><img src="/src/img/logo.png" alt="logo"></figure>
+    </div>
+  </header>
+  <div class="container">
+    <h1> <strong>!! Piedra Papel o Tijeras !!</strong></h1>
+    <div class="resultados">
+      <div class="resultados-container">
+        <div class="results-up">
+          <div class="human-pane">
+            <h2> <strong>Elección</strong> </h2>
+            <figure><img class="human-img" src="/src/img/preguntas.png" alt="pregunta"></figure>
+          </div>
+          <div class="vs-pane">
+            <h2> <strong>VS</strong></h2>
+          </div>
+          <div class="machine-pane">
+            <h2> <strong>Maquina</strong> </h2>
+            <figure><img class="machine-img" src="/src/img/preguntas.png" alt="pregunta"></figure>
+          </div>
+        </div>
+        <div class="results-down">
+          <h2 class="result"><strong>Resultado</strong> </h2>
+        </div>
+      </div>
+    </div>
+    <div class="down-panel">
+      <h2> <strong>Tu jugada !!</strong> </h2>
+      <div class="eleccion">
+        <button class="stone" onclick="play(1)">
+          <figure><img src="/src/img/option1.png" /></figure>
+        </button>
+        <button class="paper" onclick="play(2)">
+          <figure><img src="/src/img/option2.png" /></figure>
+        </button>
+        <button class="scissors" onclick="play(3)">
+          <figure><img src="/src/img/option3.png" /></figure>
+        </button>
+      </div>
+      <div class="cover">
+        <button onclick="reset()"><strong>Jugar de Nuevo</strong> </button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p> <strong>🙈 GussDev 🙉</strong></p>
+  </footer>
+  <script src="/main.js"></script>
+</body>
+
+</html>

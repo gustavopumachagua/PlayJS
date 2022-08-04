@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5c7a9;
+  overflow-x: hidden;
+}
+figure {
+  margin: 15px;
+}
+header,
+header div {
+  display: flex;
+}
+header {
+  justify-content: space-between;
+  background: #411530;
+  padding: 0 30px 0 30px;
+  box-sizing: border-box;
+  width: 100vw;
+}
+header img {
+  width: 150px;
+}
+.container {
+  box-sizing: border-box;
+  background: #d1512d;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  width: 100vw;
+  font-family: "Kurale", serif;
+}
+.container h1,
+.container h2,
+.container h3 {
+  font-weight: lighter;
+}
+.container h1 {
+  font-size: 48px;
+  color: #f8cb2b;
+}
+.resultados,
+.resultados-container {
+  border: 5px solid;
+  border-radius: 20px;
+}
+.resultados {
+  padding: 5px;
+}
+.results-up {
+  display: flex;
+  align-items: center;
+}
+.results-up div {
+  margin: 20px;
+  text-align: center;
+}
+.machine-img.reflex {
+  transform: scaleX(-1);
+}
+.results-down {
+  text-align: center;
+}
+.down-panel {
+  text-align: center;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.down-panel h2 {
+  color: #f8cb2b;
+  font-size: 32px;
+}
+.eleccion button {
+  background: transparent;
+  padding: 10px;
+  width: 240px;
+  height: 240px;
+  cursor: pointer;
+  outline: none;
+  box-sizing: border-box;
+}
+.paper img {
+  transform: scaleX(-1);
+}
+.eleccion button,
+.eleccion button figure {
+  border: 5px solid #fff;
+  border-radius: 100%;
+  margin: 10px;
+}
+.eleccion button figure {
+  margin: 0;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eleccion button img {
+  width: 140px;
+  height: 140px;
+}
+.eleccion button:hover {
+  background: #fff;
+  box-shadow: -1px 2px 18px 0px #fff;
+}
+.eleccion button:hover figure {
+  border: 5px solid #369;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.cover button {
+  color: black;
+  outline: none;
+  background: #f5c7a9;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: "Kurale", serif;
+  font-size: 20px;
+  padding: 30px 50px;
+}
+.cover button:hover {
+  background: #f8d041;
+}
+.cover.reset {
+  display: flex;
+}
+footer {
+  text-align: center;
+  color: black;
+  font-family: "Kurale", serif;
+}
+
+@media (max-width: 414px) {
+  .results-up div {
+    margin: -5px;
+  }
+  .logo-page {
+    padding: 0 4rem;
+  }
+}
